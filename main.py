@@ -37,7 +37,7 @@ def translate(text):
 # Main Page
 if app_mode == "Home":
     st.header(translate("PLANT DISEASE RECOGNITION SYSTEM"))
-    image_path = "data/image1.jpg"
+    image_path = "image/image1.jpg"
     st.image(image_path, use_column_width=True)
     st.markdown(translate(
         """
