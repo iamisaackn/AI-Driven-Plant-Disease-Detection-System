@@ -27,7 +27,7 @@ languages = {
 # Sidebar for language selection
 st.sidebar.title("Dashboard")
 selected_language = st.sidebar.selectbox("Select your language", list(languages.keys()))
-app_mode = st.sidebar.selectbox("Select Page", ["Home", "About Us", "Educational Resources", "Literature Review", "Disease Recognition", "Feedback"])
+app_mode = st.sidebar.selectbox("Select Page", ["Home", "About Us", "Educational Resources", "Disease Recognition", "Literature Review", "Feedback"])
 
 # Translation function
 def translate(text):
@@ -166,71 +166,6 @@ elif app_mode == "Educational Resources":
         
         """
     ))
-
-elif app_mode == "Literature Review":
-    st.header("Literature Review")
-    st.markdown(translate("""
-        # Literature Review
-
-        ## Plant Patrol: Plant Disease Detection with Artificial Intelligence
-
-        Plant diseases pose a significant threat to global food security, leading to substantial crop yield losses and economic damages. Traditional methods of disease detection, such as visual inspection by experts, are often time-consuming, labour-intensive, and prone to human error. To address these challenges, recent advancements in artificial intelligence (AI) and computer vision have paved the way for innovative solutions.
-
-        AI-powered plant disease detection systems offer a promising approach to automate the diagnosis process, enabling early intervention and effective disease management. These systems typically involve the following steps:
-        1. **Image Acquisition**: High-quality images of plant leaves or entire plants are captured using digital cameras or smartphones (Doe et al., 2022).
-        2. **Image Preprocessing**: Images are preprocessed to enhance feature extraction, including noise reduction, normalization, and resizing (Smith & Brown, 2021).
-        3. **Feature Extraction**: Relevant features, such as color, texture, and shape, are extracted from the preprocessed images (Johnson et al., 2020).
-        4. **Model Training**: Machine learning or deep learning models, particularly convolutional neural networks (CNNs), are trained on large datasets of labelled images to learn to classify plant diseases (Lee, 2019).
-        5. **Disease Classification**: The trained model is used to classify new images of plant leaves or entire plants into different disease categories or healthy plants (Kim & Zhang, 2023).
-
-        ## Comparative Analysis
-
-        Numerous studies have explored the potential of AI-powered plant disease detection. Some notable works referenced in the development of our system include:
-        - **Mohanty et al. (2016)**: This pioneering work introduced a deep learning-based approach using a CNN to classify 14 different plant diseases from leaf images. While impressive, it was limited to a specific set of diseases and relied on a fixed dataset.
-        - **Ferentinos et al. (2018)**: This research focused on olive leaf disease detection using a combination of CNNs and Support Vector Machines (SVMs). Although effective, the model's performance might be affected by variations in image quality and lighting conditions.
-        - **Lee et al. (2019)**: This study emphasized the importance of data augmentation to improve model robustness. However, the model's accuracy may be limited by the availability of large, diverse datasets.
-
-        ## Our Proposed System
-
-        To address the limitations of existing systems and enhance accuracy, Plant Patrol incorporates several innovative features:
-        - **Enhanced Data Augmentation**: We employ advanced data augmentation techniques to generate diverse image variations, improving the model's ability to generalize to real-world scenarios. Our image dataset was sourced from https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
-        - **Deep Learning Architecture**: We leverage the power of state-of-the-art deep learning architectures, such as ResNet-9, to extract more informative features from plant images.
-        - **Real-time Inference and User-Friendly Interface**: Our system is optimized for real-time inference, enabling rapid disease diagnosis. We have developed a user-friendly web interface, powered by Streamlit, that allows farmers to easily upload images and receive accurate disease diagnoses.
-        - **Continuous Learning and Adaptation**: We are committed to continuous improvement and plan to implement a self-learning mechanism that will allow our system to adapt to new diseases and evolving conditions.
-
-        ## Streamlit Integration
-
-        Streamlit is a powerful Python library for building web apps efficiently. It offers a simple and intuitive way to create interactive web applications without requiring extensive web development knowledge. By integrating AI-powered plant disease detection models with Streamlit, we have developed a user-friendly interface for real-time disease diagnosis.
-        1. Users can upload images of plant leaves or entire plants.
-        2. The uploaded image is processed by the AI model, and the predicted disease is displayed.
-        3. Detailed information about the predicted disease, including a diagnosis, symptoms, treatment options, and prevention measures, can be provided all through the app.
-
-        ## Impacts of Our System
-
-        Plant Patrol transforms agriculture by providing farmers with rapid, affordable, and accessible diagnostics. By enabling early detection, the app helps prevent crop losses, boosts yields, and minimizes unnecessary pesticide use, promoting more sustainable farming. Small-scale and remote farmers, who often lack access to agricultural experts, can independently manage plant health, improving both productivity and crop quality. Additionally, the system's data insights can inform agricultural policy, helping regions adapt to climate impacts and disease patterns. Overall, this technology empowers farmers, enhances food security, and supports resilient, eco-friendly agriculture.
-
-        ## Conclusion
-
-        Plant Patrol holds immense potential to revolutionize agriculture. By enabling early and accurate diagnosis, our system can help farmers reduce crop losses, improve agricultural productivity, and ensure food security.
-
-        ## Future Research Directions
-        - **Real-time Monitoring Systems**: Developing systems that can continuously monitor crops and detect diseases in real-time.
-        - **Mobile Applications**: Creating user-friendly mobile apps for farmers to easily access disease detection services.
-        - **Integration with IoT Devices**: Combining AI-powered disease detection with IoT sensors for comprehensive crop monitoring.
-        - **Explainable AI**: Developing techniques to interpret the decision-making process of AI models, providing insights into the underlying reasons for a particular diagnosis.
-
-        ## References
-        - **Mohanty, S. P., Hughes, D. P., & Salathé, M. (2016)**. Using deep learning for image-based plant disease detection. Frontiers in Plant Science, 7, 1419.
-        - **Ferentinos, K. P., Psorakis, I., & Perakis, S. (2018)**. Deep learning models for plant disease detection. Computers and Electronics in Agriculture, 142, 33-41.
-        - **Lee, S., Lee, S., & Han, G. (2019)**. Plant disease detection using deep learning for smart farming. Sensors, 19(13), 2938.
-        - **Pimentel, D., Camargo, A., & Bressan, P. M. (2018)**. A deep learning approach to detect diseases in coffee plants. Computers and Electronics in Agriculture, 145, 134-141.
-        - **Lu, L., Zheng, Y., & Zhou, Z. (2019)**. Deep learning for plant disease detection: A review. Agronomy, 9(10), 623.
-        - **Zhang, Y., Wang, S., & Zhang, L. (2020)**. A review of deep learning-based plant disease detection. Computers and Electronics in Agriculture, 170, 105359.
-        - **Tahir, A., Khan, M. A., & Khan, S. A. (2021)**. Deep learning for plant disease detection: A comprehensive review. Artificial Intelligence Review, 54(6), 4173-4203.
-        - **Barbedo, J. G. A. (2018)**. A review on deep learning techniques applied to plant disease detection. Computers and Electronics in Agriculture, 147, 101-114.
-        - **Fuentes, A., Ortíz-García, E., García-Peñalvo, F. J., & Herrera, F. (2019)**. Deep learning for plant disease detection: A review. Computers and Electronics in Agriculture, 167, 105216.
-        - **Kamilaris, A., & Xidonas, P. (2018)**. Deep learning in agriculture: A survey. Computers and Electronics in Agriculture, 147, 70-90.
-    """))
 
 # Prediction Page
 elif app_mode == "Disease Recognition":
@@ -461,6 +396,71 @@ elif app_mode == "Disease Recognition":
         st.write(translate("Description: "), disease_info['Description'])
         st.write(translate("Treatment: "), disease_info['Treatment'])
         st.write(translate("Prevention: "), disease_info['Prevention'])
+
+elif app_mode == "Literature Review":
+    st.header("Literature Review")
+    st.markdown(translate("""
+        # Literature Review
+
+        ## Plant Patrol: Plant Disease Detection with Artificial Intelligence
+
+        Plant diseases pose a significant threat to global food security, leading to substantial crop yield losses and economic damages. Traditional methods of disease detection, such as visual inspection by experts, are often time-consuming, labour-intensive, and prone to human error. To address these challenges, recent advancements in artificial intelligence (AI) and computer vision have paved the way for innovative solutions.
+
+        AI-powered plant disease detection systems offer a promising approach to automate the diagnosis process, enabling early intervention and effective disease management. These systems typically involve the following steps:
+        1. **Image Acquisition**: High-quality images of plant leaves or entire plants are captured using digital cameras or smartphones (Doe et al., 2022).
+        2. **Image Preprocessing**: Images are preprocessed to enhance feature extraction, including noise reduction, normalization, and resizing (Smith & Brown, 2021).
+        3. **Feature Extraction**: Relevant features, such as color, texture, and shape, are extracted from the preprocessed images (Johnson et al., 2020).
+        4. **Model Training**: Machine learning or deep learning models, particularly convolutional neural networks (CNNs), are trained on large datasets of labelled images to learn to classify plant diseases (Lee, 2019).
+        5. **Disease Classification**: The trained model is used to classify new images of plant leaves or entire plants into different disease categories or healthy plants (Kim & Zhang, 2023).
+
+        ## Comparative Analysis
+
+        Numerous studies have explored the potential of AI-powered plant disease detection. Some notable works referenced in the development of our system include:
+        - **Mohanty et al. (2016)**: This pioneering work introduced a deep learning-based approach using a CNN to classify 14 different plant diseases from leaf images. While impressive, it was limited to a specific set of diseases and relied on a fixed dataset.
+        - **Ferentinos et al. (2018)**: This research focused on olive leaf disease detection using a combination of CNNs and Support Vector Machines (SVMs). Although effective, the model's performance might be affected by variations in image quality and lighting conditions.
+        - **Lee et al. (2019)**: This study emphasized the importance of data augmentation to improve model robustness. However, the model's accuracy may be limited by the availability of large, diverse datasets.
+
+        ## Our Proposed System
+
+        To address the limitations of existing systems and enhance accuracy, Plant Patrol incorporates several innovative features:
+        - **Enhanced Data Augmentation**: We employ advanced data augmentation techniques to generate diverse image variations, improving the model's ability to generalize to real-world scenarios. Our image dataset was sourced from https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset
+        - **Deep Learning Architecture**: We leverage the power of state-of-the-art deep learning architectures, such as ResNet-9, to extract more informative features from plant images.
+        - **Real-time Inference and User-Friendly Interface**: Our system is optimized for real-time inference, enabling rapid disease diagnosis. We have developed a user-friendly web interface, powered by Streamlit, that allows farmers to easily upload images and receive accurate disease diagnoses.
+        - **Continuous Learning and Adaptation**: We are committed to continuous improvement and plan to implement a self-learning mechanism that will allow our system to adapt to new diseases and evolving conditions.
+
+        ## Streamlit Integration
+
+        Streamlit is a powerful Python library for building web apps efficiently. It offers a simple and intuitive way to create interactive web applications without requiring extensive web development knowledge. By integrating AI-powered plant disease detection models with Streamlit, we have developed a user-friendly interface for real-time disease diagnosis.
+        1. Users can upload images of plant leaves or entire plants.
+        2. The uploaded image is processed by the AI model, and the predicted disease is displayed.
+        3. Detailed information about the predicted disease, including a diagnosis, symptoms, treatment options, and prevention measures, can be provided all through the app.
+
+        ## Impacts of Our System
+
+        Plant Patrol transforms agriculture by providing farmers with rapid, affordable, and accessible diagnostics. By enabling early detection, the app helps prevent crop losses, boosts yields, and minimizes unnecessary pesticide use, promoting more sustainable farming. Small-scale and remote farmers, who often lack access to agricultural experts, can independently manage plant health, improving both productivity and crop quality. Additionally, the system's data insights can inform agricultural policy, helping regions adapt to climate impacts and disease patterns. Overall, this technology empowers farmers, enhances food security, and supports resilient, eco-friendly agriculture.
+
+        ## Conclusion
+
+        Plant Patrol holds immense potential to revolutionize agriculture. By enabling early and accurate diagnosis, our system can help farmers reduce crop losses, improve agricultural productivity, and ensure food security.
+
+        ## Future Research Directions
+        - **Real-time Monitoring Systems**: Developing systems that can continuously monitor crops and detect diseases in real-time.
+        - **Mobile Applications**: Creating user-friendly mobile apps for farmers to easily access disease detection services.
+        - **Integration with IoT Devices**: Combining AI-powered disease detection with IoT sensors for comprehensive crop monitoring.
+        - **Explainable AI**: Developing techniques to interpret the decision-making process of AI models, providing insights into the underlying reasons for a particular diagnosis.
+
+        ## References
+        - **Mohanty, S. P., Hughes, D. P., & Salathé, M. (2016)**. Using deep learning for image-based plant disease detection. Frontiers in Plant Science, 7, 1419.
+        - **Ferentinos, K. P., Psorakis, I., & Perakis, S. (2018)**. Deep learning models for plant disease detection. Computers and Electronics in Agriculture, 142, 33-41.
+        - **Lee, S., Lee, S., & Han, G. (2019)**. Plant disease detection using deep learning for smart farming. Sensors, 19(13), 2938.
+        - **Pimentel, D., Camargo, A., & Bressan, P. M. (2018)**. A deep learning approach to detect diseases in coffee plants. Computers and Electronics in Agriculture, 145, 134-141.
+        - **Lu, L., Zheng, Y., & Zhou, Z. (2019)**. Deep learning for plant disease detection: A review. Agronomy, 9(10), 623.
+        - **Zhang, Y., Wang, S., & Zhang, L. (2020)**. A review of deep learning-based plant disease detection. Computers and Electronics in Agriculture, 170, 105359.
+        - **Tahir, A., Khan, M. A., & Khan, S. A. (2021)**. Deep learning for plant disease detection: A comprehensive review. Artificial Intelligence Review, 54(6), 4173-4203.
+        - **Barbedo, J. G. A. (2018)**. A review on deep learning techniques applied to plant disease detection. Computers and Electronics in Agriculture, 147, 101-114.
+        - **Fuentes, A., Ortíz-García, E., García-Peñalvo, F. J., & Herrera, F. (2019)**. Deep learning for plant disease detection: A review. Computers and Electronics in Agriculture, 167, 105216.
+        - **Kamilaris, A., & Xidonas, P. (2018)**. Deep learning in agriculture: A survey. Computers and Electronics in Agriculture, 147, 70-90.
+    """))
 
 elif app_mode == "Feedback":
     st.header(translate("🌿 Feedback 🌱"))
