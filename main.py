@@ -168,22 +168,19 @@ elif app_mode == "Educational Resources":
     ))
 
 # Prediction Page
-# Prediction Page
 elif app_mode == "Disease Recognition":
     st.header(translate("Disease Recognition"))
     test_image = st.file_uploader(translate("Choose an Image:"))
 
-    if test_image is not None:
-        # Show Image button
-        if st.button(translate("Show Image")):
-            st.image(test_image, width=300)  # Regulate the image width to 300 pixels
+    if st.button(translate("Show Image")):
+        st.image(test_image, width=300)
 
-        # Predict button
-        if st.button(translate("Predict")):
-            st.snow()
-            st.write(translate("Our Prediction"))
-            result_index = model_prediction(test_image)
-            st.image(test_image, width=300)
+    # Predict button
+    if st.button(translate("Predict")):
+        st.snow()
+        st.write(translate("Our Prediction"))
+        result_index = model_prediction(test_image)
+        st.image(test_image, width=300)
 
         # Reading Labels
         class_name = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
