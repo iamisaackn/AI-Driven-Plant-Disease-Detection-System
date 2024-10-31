@@ -1,3 +1,7 @@
+#!/bin/bash
+pip install --upgrade pip
+pip install -r requirements.txt
+
 import streamlit as st
 import tensorflow as tf
 import numpy as np
