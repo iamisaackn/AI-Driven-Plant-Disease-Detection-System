@@ -180,6 +180,7 @@ elif app_mode == "Disease Recognition":
         st.snow()
         st.write(translate("Our Prediction"))
         result_index = model_prediction(test_image)
+        st.image(test_image, width=4, use_column_width=True)
 
         # Reading Labels
         class_name = ['Apple___Apple_scab', 'Apple___Black_rot', 'Apple___Cedar_apple_rust', 'Apple___healthy',
