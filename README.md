@@ -67,19 +67,14 @@ To set up the AI-Driven Plant Disease Detection System, follow these steps:
 4. Ensure you have the necessary environment variables set up for your API keys and configurations.
 
 ## 4. Project Structure
-```
-PlantPatrol/
-│
-├── data/                  # Dataset files
-├── models/                # Trained models
-├── notebooks/             # Jupyter notebooks for EDA and modeling
-├── src/                   # Source code for the application
-│   ├── __init__.py
-│   ├── main.py            # Main application file
-│   ├── model.py           # Model training and evaluation
-│   └── utils.py           # Utility functions
-└── requirements.txt       # Python dependencies
-```
+1. [Notebook](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/notebook.ipynb)
+2. [Notebook PDF](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/notebook.pdf)
+3. [Power Point Presentation](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/Power%20Point%20Plant%20Patrol%20Slide%20Presentation.pptx)
+4. [Presentation PDF](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/Presentation.pdf)
+5. [Requirements File](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/requirements.txt)
+6. [Read Me](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/README.md)
+7. [Plant Patrol Streamlit App](https://plantpatrol.streamlit.app/)
+8. [LICENSE](https://github.com/iamisaackn/AI-Driven-Plant-Disease-Detection-System/blob/main/LICENSE)
 
 ## 5. Dataset Description
 
