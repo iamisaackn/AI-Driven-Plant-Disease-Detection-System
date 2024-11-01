@@ -38,7 +38,7 @@ def translate(text):
 if app_mode == "Home":
     st.header(translate("PLANT DISEASE RECOGNITION SYSTEM"))
     image_path = "image/image1.jpg"
-    st.image(image_path, use_column_width=True)
+    st.image(image_path, width=500)
     st.markdown(translate(
         """
         Welcome to the **Plant Disease Recognition System**! 🌿 This platform is designed to help farmers and agricultural enthusiasts detect plant diseases in real-time, ensuring healthier crops and sustainable farming practices.
