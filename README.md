@@ -1,7 +1,7 @@
 # AI-Driven Plant Disease Detection System
 
 ## Group Information
-- **Group Name:** PlantPatrol
+- **Group Name:** Leaf PlantPatrol
 - **Supervisor:** Dr. Stanley Mwangi Chege, PhD (Email: stanley.mwangichege@gmail.com)
 - **Group Members:**
   - Isaac Ngugi (Group Lead: itsngugiisaackinyanjui@gmail.com)
