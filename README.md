@@ -7,6 +7,9 @@
   - Isaac Ngugi (Group Lead: itsngugiisaackinyanjui@gmail.com)
   - Naftali Koome
   - Serena Waithera
+  - Wangeci Njiru
+  - Mark Wema
+    
 - **Group Slogan:** Your Plants, Our Priority
 - **Topic:** AI for Climate Change, Agriculture, and Food Security
 - **Project Title:** AI-Driven Plant Disease Detection System
